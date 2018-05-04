@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.8" type="plugin" group="jshoppingproducts" method="upgrade">
+	<name>PLG_JSHOPPINGPRODUCTS_CURRENTCATPRODUCTS</name>
+	<author>Artem Pavluk</author>
+	<creationDate>May 2018</creationDate>
+	<copyright>© copyright 2010 - 2018 Private master Pavluk</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@art-pavluk.com</authorEmail>
+	<authorUrl>https://art-pavluk.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_JSHOPPINGPRODUCTS_CURRENTCATPRODUCTS_DESCRIPTION</description>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_jshoppingproducts_currentcatproducts.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_jshoppingproducts_currentcatproducts.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_jshoppingproducts_currentcatproducts.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_jshoppingproducts_currentcatproducts.sys.ini</language>
+	</languages>
+	<files>
+		<filename plugin="currentcatproducts">currentcatproducts.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			</fieldset>
+		</fields>
+	</config>
+</extension>
