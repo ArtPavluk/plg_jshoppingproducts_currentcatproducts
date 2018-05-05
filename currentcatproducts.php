@@ -12,9 +12,20 @@ defined('_JEXEC') or die;
 
 use Joomla\CMS\Plugin\CMSPlugin;
 use Joomla\CMS\Table\Table;
+use Joomla\CMS\Layout\LayoutHelper;
+use Joomla\CMS\Factory;
 
 class plgJshoppingproductsCurrentCatProducts extends CMSPlugin
 {
+	/**
+	 * Name of the layout being used to render the currentcatproducts
+	 *
+	 * @var    string
+	 *
+	 * @since  1.0.0
+	 */
+	protected $layout = 'plugins.jshoppingproducts.currentcatproducts.default';
+
 	/**
 	 * Add  guarantee value
 	 *
@@ -37,11 +48,11 @@ class plgJshoppingproductsCurrentCatProducts extends CMSPlugin
 		}
 		$categories  = array_unique($categories);
 		$table       = Table::getInstance('product', 'jshop');
-		$products    = $table->getAllProducts(array('categorys' => $categories),'', '', '', $limit);
+		$products    = $table->getAllProducts(array('categorys' => $categories), '', '', '', $limit);
 		$catproducts = array();
 
 		$i = 1;
-		if (count($products) > 1)
+		if (count($products) > 2)
 		{
 			foreach ($products as $item)
 			{
@@ -58,6 +69,18 @@ class plgJshoppingproductsCurrentCatProducts extends CMSPlugin
 					if ($i == $this->params->get('limit', 1)) break;
 				}
 			}
+
+			$product->set('catproducts', $catproducts);
+
+			// Render layout products
+			if ($this->params->get('auto_display', 1) && !empty($catproducts))
+			{
+				$language = Factory::getLanguage();
+				$language->load('plg_jshoppingproducts_currentcatproducts', JPATH_ADMINISTRATOR);
+				$position = $this->params->get('position_display', '_tmp_product_html_end');
+				$view->$position .= LayoutHelper::render($this->layout, $catproducts);
+			}
+
 		}
 	}
 }

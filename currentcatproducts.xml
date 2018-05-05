@@ -9,6 +9,7 @@
 	<authorUrl>https://art-pavluk.com</authorUrl>
 	<version>1.0.0</version>
 	<description>PLG_JSHOPPINGPRODUCTS_CURRENTCATPRODUCTS_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.plg_jshoppingproducts_currentcatproducts.ini</language>
 		<language tag="en-GB">en-GB/en-GB.plg_jshoppingproducts_currentcatproducts.sys.ini</language>
@@ -17,6 +18,7 @@
 	</languages>
 	<files>
 		<filename plugin="currentcatproducts">currentcatproducts.php</filename>
+		<folder>layouts</folder>
 	</files>
 	<config>
 		<fields name="params">
