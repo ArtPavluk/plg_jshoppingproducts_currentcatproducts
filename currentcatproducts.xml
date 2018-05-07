@@ -42,6 +42,8 @@
 					   hint="_tmp_product_html_end"
 					   showon="auto_display:1"/>
 				<field name="limit" type="number"
+					   default="6"
+					   min="1"
 					   label="PLG_JSHOPPINGPRODUCTS_CURRENTCATPRODUCTS_LIMIT"
 					   description="PLG_JSHOPPINGPRODUCTS_CURRENTCATPRODUCTS_LIMIT_DESCRIPTION"
 					   class="input-small"/>

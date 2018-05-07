@@ -40,47 +40,47 @@ class plgJshoppingproductsCurrentCatProducts extends CMSPlugin
 	 */
 	public function onBeforeDisplayProduct(&$product, &$view, &$product_images, &$product_videos, &$product_demofiles)
 	{
-		$limit      = ($this->params->get('limit', 0)) ? $this->params->get('limit', 1) + 1 : 0;
+		$limit      = $this->params->get('limit', 6) + 1;
 		$categories = array();
 		foreach ($product->product_categories as $category)
 		{
 			$categories[] = $category->category_id;
 		}
-		$categories  = array_unique($categories);
-		$table       = Table::getInstance('product', 'jshop');
-		$products    = $table->getAllProducts(array('categorys' => $categories), '', '', '', $limit);
-		$catproducts = array();
+
+		$categories = array_unique($categories);
+		$table      = Table::getInstance('product', 'jshop');
+		$products   = $table->getAllProducts(array('categorys' => $categories), '', '', '', $limit);
 
 		$i = 1;
-		if (count($products) > 2)
+
+		foreach ($products as $key => $item)
 		{
-			foreach ($products as $item)
+			echo '<pre>', print_r($key, true), '</pre>';
+			// Add product to Array
+			if ($item->product_id == $product->product_id)
 			{
-				// Add product to Array
-				if ($item->product_id !== $product->product_id)
-				{
-					$catproducts[] = $item;
-				}
+				unset($products[$key]);
+			}
+			else
+			{
 				$i++;
-
-				// Stop foreach limit
-				if ($limit)
+				if ($i > $limit)
 				{
-					if ($i == $this->params->get('limit', 1)) break;
+					unset($products[$key]);
 				}
 			}
 
-			$product->set('catproducts', $catproducts);
+		}
 
-			// Render layout products
-			if ($this->params->get('auto_display', 1) && !empty($catproducts))
-			{
-				$language = Factory::getLanguage();
-				$language->load('plg_jshoppingproducts_currentcatproducts', JPATH_ADMINISTRATOR);
-				$position = $this->params->get('position_display', '_tmp_product_html_end');
-				$view->$position .= LayoutHelper::render($this->layout, $catproducts);
-			}
+		$product->set('catproducts', $products);
 
+		// Render layout products
+		if ($this->params->get('auto_display', 1) && !empty($products))
+		{
+			$language = Factory::getLanguage();
+			$language->load('plg_jshoppingproducts_currentcatproducts', JPATH_ADMINISTRATOR);
+			$position        = $this->params->get('position_display', '_tmp_product_html_end');
+			$view->$position .= LayoutHelper::render($this->layout, $products);
 		}
 	}
 }
