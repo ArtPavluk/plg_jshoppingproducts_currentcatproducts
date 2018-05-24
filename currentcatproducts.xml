@@ -50,4 +50,9 @@
 			</fieldset>
 		</fields>
 	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="Art products module">
+			https://update.art-pavluk.com/update?extension=plg_jshoppingproducts_currentcatproducts
+		</server>
+	</updateservers>
 </extension>
