@@ -55,7 +55,6 @@ class plgJshoppingproductsCurrentCatProducts extends CMSPlugin
 
 		foreach ($products as $key => $item)
 		{
-			echo '<pre>', print_r($key, true), '</pre>';
 			// Add product to Array
 			if ($item->product_id == $product->product_id)
 			{
