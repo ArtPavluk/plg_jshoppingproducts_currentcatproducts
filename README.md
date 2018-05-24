@@ -1,5 +1,3 @@
-### Attention extension is under development
-
 # Jshoppingproducts - Products from current category
 Displays goods from the current category in the product card
 
