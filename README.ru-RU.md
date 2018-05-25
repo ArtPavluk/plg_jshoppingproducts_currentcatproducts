@@ -20,7 +20,7 @@
 **Файл по умолчанию находится здесь**
 */layouts/plugins/jshoppingproducts/currentcatproducts/default.php*
 
-** Вы можете переопределить вывод плагина для этого, вам нужно создать такую ​​структуру в своем шаблоне **
+**Вы можете переопределить вывод плагина для этого, вам нужно создать такую ​​структуру в своем шаблоне**
 */templates/your_template /html/layouts/plugins/jshoppingproducts/currentcatproducts/default.php*
 
 ## Скриншоты
