@@ -4,7 +4,7 @@
 **[Загрузить последнюю версию](https://github.com/ArtPavluk/plg_jshoppingproducts_currentcatproducts/releases/latest)**  
 **[Live Demo](https://demo.art-pavluk.com/ru/joomshopping/product/view/1/1)**
 
-**Поддерживаемые версии Joomla:** 3.8.0 и более поздние версии
+**Поддерживаемые версии Joomla:** 3.8.0 и более поздние версии   
 **Поддерживаемые версии JoomShopping:** 4.x и более поздние версии  
 **Прочесть на других языках:**
 [English](https://github.com/ArtPavluk/plg_jshoppingproducts_currentcatproducts/blob/master/README.md), 
