@@ -26,6 +26,4 @@ Displays goods from the current category in the product card
 ### Automatic output of goods - No
 ![Automatic output of goods - No](https://demo.art-pavluk.com/images/screenshots/plg_jshoppingproducts_currentcatproducts/en/note.png)
 ### Appearance of the plugin
-![Appearance of the plugin](https://demo.art-pavluk.com/images/screenshots/plg_jshoppingproducts_currentcatproducts/en/fullfront.png)
-
 ![Appearance of the plugin](https://demo.art-pavluk.com/images/screenshots/plg_jshoppingproducts_currentcatproducts/en/front.png)
