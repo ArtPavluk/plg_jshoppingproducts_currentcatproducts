@@ -5,7 +5,10 @@ Displays goods from the current category in the product card
 **[Live Demo](https://demo.art-pavluk.com/en/joomshopping/cars/convertible)**
 
 **Supported Joomla versions:** 3.8.0 and later  
-**Supported JoomShopping versions:** 4.x and later 
+**Supported JoomShopping versions:** 4.x and later  
+**Read this in other languages:** 
+[English](https://github.com/ArtPavluk/plg_jshoppingproducts_currentcatproducts/blob/master/README.md), 
+[Русский](https://github.com/ArtPavluk/plg_jshoppingproducts_currentcatproducts/blob/master/README.ru-RU.md)
 
 ## Settings
 * **Automatic output of goods** - Yes \ No  (items will automatically automatically appear in the specified place automatically)
