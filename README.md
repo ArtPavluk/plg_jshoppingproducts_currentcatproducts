@@ -14,10 +14,10 @@ Displays goods from the current category in the product card
 
 ## Override
 **The default file is located here**  
-***/layouts/plugins/jshoppingproducts/currentcatproducts/default.php***
+*/layouts/plugins/jshoppingproducts/currentcatproducts/default.php*
 
 **You can override the output of the plug-in for this, you need to create such a structure in your template**  
-***/templates/your_template /html/layouts/plugins/jshoppingproducts/currentcatproducts/default.php***
+*/templates/your_template /html/layouts/plugins/jshoppingproducts/currentcatproducts/default.php*
 
 ## Screenshots
 
