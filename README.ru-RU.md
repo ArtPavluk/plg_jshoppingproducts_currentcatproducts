@@ -2,7 +2,7 @@
 Отображает товары из текущей категории в карточке товара.
 
 **[Загрузить последнюю версию](https://github.com/ArtPavluk/plg_jshoppingproducts_currentcatproducts/releases/latest)**  
-**[Live Demo](https://demo.art-pavluk.com/ru/joomshopping/cars/convertible)**
+**[Live Demo](https://demo.art-pavluk.com/joomshopping/cars/convertible)**
 
 **Поддерживаемые версии Joomla:** 3.8.0 и более поздние версии
 **Поддерживаемые версии JoomShopping:** 4.x и более поздние версии  
