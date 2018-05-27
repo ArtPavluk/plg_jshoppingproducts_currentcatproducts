@@ -2,7 +2,8 @@
 Displays goods from the current category in the product card
 
 **[Download last version](https://github.com/ArtPavluk/plg_jshoppingproducts_currentcatproducts/releases/latest)**   
-**[Live Demo](https://demo.art-pavluk.com/en/joomshopping/cars/convertible)**
+**[Live Demo](https://demo.art-pavluk.com/en/joomshopping/cars/convertible)**  
+**[Joomla! Extensions Directory](https://extensions.joomla.org/extensions/extension/extension-specific/joomshopping-extensions/jshoppingproducts-products-from-current-category/)** 
 
 **Supported Joomla versions:** 3.8.0 and later  
 **Supported JoomShopping versions:** 4.x and later  

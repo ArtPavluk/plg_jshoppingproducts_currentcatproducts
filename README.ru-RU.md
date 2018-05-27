@@ -2,7 +2,8 @@
 Отображает товары из текущей категории в карточке товара.
 
 **[Загрузить последнюю версию](https://github.com/ArtPavluk/plg_jshoppingproducts_currentcatproducts/releases/latest)**  
-**[Live Demo](https://demo.art-pavluk.com/ru/joomshopping/product/view/1/1)**
+**[Live Demo](https://demo.art-pavluk.com/ru/joomshopping/product/view/1/1)**  
+**[Joomla! Extensions Directory](https://extensions.joomla.org/extensions/extension/extension-specific/joomshopping-extensions/jshoppingproducts-products-from-current-category/)**
 
 **Поддерживаемые версии Joomla:** 3.8.0 и более поздние версии   
 **Поддерживаемые версии JoomShopping:** 4.x и более поздние версии  
